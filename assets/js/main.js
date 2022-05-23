@@ -38,7 +38,6 @@ $(document).ready(function () {
     selectOption.init();
     filterRadio.init();
     filterDextop.init();
-    selectOption1.init();
     showMoreDetailYatch.init();
     toastMessage.init();
     comment.init();

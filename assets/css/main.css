@@ -11702,9 +11702,6 @@ section.news-mb .component__pagination {
 .banner-cano-inner .cano-service-detail .detail-left .left-content .options-select .numb-people .content-right{
     width: 58%;
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {  
-
-   opacity: 1;
-
+p{
+    margin-bottom: 0;
 }
