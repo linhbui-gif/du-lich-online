@@ -680,61 +680,29 @@ const selectOption = {
                 timeSelect.classList.remove("active");
             }
         });
-
-        $(".decrease-btn").bind("click", function () {
-            var value = Number($(this).parent().find(".value-btn").html());
-            if (value == 0) return;
-            $(this)
-                .parent()
-                .find(".value-btn")
-                .html(value - 1);
-            $(this)
-                .parent()
-                .find("input")
-                .val(value - 1);
-            displaySelectValue();
-        });
-        $(".increase-btn").bind("click", function () {
-            var value = Number($(this).parent().find(".value-btn").html());
-            $(this)
-                .parent()
-                .find(".value-btn")
-                .html(value + 1);
-            $(this)
-                .parent()
-                .find("input")
-                .val(value + 1);
-            displaySelectValue();
-        });
-
-        const displaySelectValue = () => {
-            let nguoiLonValue, treEmValue, nguoiGiaValue;
-            const allValueBtn = document.querySelectorAll(
-                "#options-select .value-btn"
-            );
-            const data = [];
-            allValueBtn.forEach((item) => {
-                if (item.dataset.value === "adults")
-                    nguoiLonValue = item.innerHTML;
-                if (item.dataset.value === "child") treEmValue = item.innerHTML;
-                if (item.dataset.value === "elderly")
-                    nguoiGiaValue = item.innerHTML;
+        const showSelectValue = () => {
+            const allValueBtn = [...document.querySelectorAll("#options-select .value-btn")];
+            let objectPeople = {};
+            allValueBtn.forEach(input => {
+                input.addEventListener('keypress', changeHandler)
+                input.addEventListener('change', changeHandler)
             });
-
-            if (Number(nguoiLonValue) > 0)
-                data.push(`${nguoiLonValue} người lớn`);
-            if (Number(treEmValue) > 0) data.push(`${treEmValue} trẻ em`);
-            if (Number(nguoiGiaValue) > 0)
-                data.push(`${nguoiGiaValue} người già`);
-
-            if (data.length === 0) {
-                displaySelect.innerHTML = "Chưa được chọn";
-            } else {
-                displaySelect.innerHTML = data.toString();
-            }
-        };
-
-        displaySelectValue();
+            function changeHandler(e) {
+                objectPeople = {
+                    ...objectPeople,
+                    [e.target.name]: e.target.value,
+                }
+                if(objectPeople.adults > 0 || objectPeople.child > 0 || objectPeople.elderly > 0 ){
+                    displaySelect.innerHTML = `${objectPeople.adults > 0 ? `${objectPeople.adults} nguời lớn` : ''}  ${objectPeople.child > 0 ? `${objectPeople.child} trẻ em` : ''} ${objectPeople.elderly > 0 ? `${objectPeople.elderly} nguời già` : ''}`
+                }
+                else{
+                    displaySelect.innerHTML = "Chưa được chọn"
+                }
+              }
+           
+        }
+        showSelectValue()
+       
         if (arr3) {
             arr3.addEventListener("click", () => {
                 if (timeSelect) {
@@ -1105,31 +1073,31 @@ const selectOption1 = {
             "#options-select1 li"
         );
 
-        $(".decrease-btn").bind("click", function () {
-            var value = Number($(this).parent().find(".value-btn").html());
-            if (value == 0) return;
-            $(this)
-                .parent()
-                .find(".value-btn")
-                .html(value - 1);
-            $(this)
-                .parent()
-                .find("input")
-                .val(value - 1);
-            displaySelectValue();
-        });
-        $(".increase-btn").bind("click", function () {
-            var value = Number($(this).parent().find(".value-btn").html());
-            $(this)
-                .parent()
-                .find(".value-btn")
-                .html(value + 1);
-            $(this)
-                .parent()
-                .find("input")
-                .val(value + 1);
-            displaySelectValue();
-        });
+        // $(".decrease-btn").bind("click", function () {
+        //     var value = Number($(this).parent().find(".value-btn").html());
+        //     if (value == 0) return;
+        //     $(this)
+        //         .parent()
+        //         .find(".value-btn")
+        //         .html(value - 1);
+        //     $(this)
+        //         .parent()
+        //         .find("input")
+        //         .val(value - 1);
+        //     displaySelectValue();
+        // });
+        // $(".increase-btn").bind("click", function () {
+        //     var value = Number($(this).parent().find(".value-btn").html());
+        //     $(this)
+        //         .parent()
+        //         .find(".value-btn")
+        //         .html(value + 1);
+        //     $(this)
+        //         .parent()
+        //         .find("input")
+        //         .val(value + 1);
+        //     displaySelectValue();
+        // });
         arrowBtn.addEventListener("click", (e) => {
             if ($(e.target).closest(".options-select").length === 0) {
                 optionMenu.classList.toggle("active");
@@ -1161,7 +1129,7 @@ const selectOption1 = {
                 displaySelect.innerHTML = data.toString();
             }
         };
-        displaySelectValue();
+        // displaySelectValue();
         $(document).on("click", function (e) {
             if (
                 $(e.target).closest(".options-select").length === 0 &&

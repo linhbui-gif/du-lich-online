@@ -979,7 +979,7 @@ button {
 }
 
 .banner-cano-inner .cano-service-detail .detail-left .left-content .options-select.active {
-    min-height: 200px;
+    min-height: 241px;
     padding: 15px 20px;
     opacity: 1
 }
@@ -11695,4 +11695,16 @@ section.news-mb .component__pagination {
     background-color: #fff;
     border: 1px solid #ccc;
     outline: 0;
+}
+.banner-cano-inner .cano-service-detail .detail-left .left-content .options-select .numb-people .content-left{
+    width: 50%;
+}
+.banner-cano-inner .cano-service-detail .detail-left .left-content .options-select .numb-people .content-right{
+    width: 58%;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
 }
