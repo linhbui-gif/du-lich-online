@@ -11,9 +11,10 @@
 - 10, showMoreDetailYatch
 */
 /* ============================= 1, init  ============================= */
-
+/* ============================= 16 Select options trang dat ve cano  ============================= */
 $(document).ready(function () {
     fastnews.init();
+
     navigation.init();
     happyClient.init();
     happyClientMb.init();
@@ -653,34 +654,43 @@ const selectOption = {
 
         arrowBtn.addEventListener("click", (e) => {
             if ($(e.target).closest(".options-select").length === 0) {
+                console.log(optionMenu);
                 optionMenu.classList.toggle("active");
-                serviceBox.classList.remove("change-br");
-                serviceSelect.classList.remove("active");
+                if (serviceBox || serviceSelect) {
+                    serviceBox.classList.remove("change-br");
+                    serviceSelect.classList.remove("active");
+                }
                 if (timeSelect) {
                     timeSelect.classList.remove("active");
                 }
             }
         });
+        if (arr2) {
+            arr2.addEventListener("click", () => {
+                optionMenu.classList.remove("active");
+                serviceSelect.classList.toggle("active");
+                serviceBox.classList.toggle("change-br");
+                if (timeSelect) {
+                    timeSelect.classList.remove("active");
+                }
+            });
+        }
 
-        arr2.addEventListener("click", () => {
-            optionMenu.classList.remove("active");
-            serviceSelect.classList.toggle("active");
-            serviceBox.classList.toggle("change-br");
-            if (timeSelect) {
-                timeSelect.classList.remove("active");
-            }
-        });
 
         $(".flatpickr-input").click(function () {
             optionMenu.classList.remove("active");
-            serviceBox.classList.remove("change-br");
-            serviceSelect.classList.remove("active");
+            if (serviceBox || serviceSelect) {
+                serviceBox.classList.remove("change-br");
+                serviceSelect.classList.remove("active");
+            }
+
             if (timeSelect) {
                 timeSelect.classList.remove("active");
             }
         });
         const showSelectValue = () => {
             const allValueBtn = [...document.querySelectorAll("#options-select .value-btn")];
+            console.log("allValueBtn", allValueBtn);
             let objectPeople = {};
             allValueBtn.forEach(input => {
                 input.addEventListener('keypress', changeHandler)
@@ -691,17 +701,17 @@ const selectOption = {
                     ...objectPeople,
                     [e.target.name]: e.target.value,
                 }
-                if(objectPeople.adults > 0 || objectPeople.child > 0 || objectPeople.elderly > 0 ){
+                if (objectPeople.adults > 0 || objectPeople.child > 0 || objectPeople.elderly > 0) {
                     displaySelect.innerHTML = `${objectPeople.adults > 0 ? `${objectPeople.adults} nguời lớn` : ''}  ${objectPeople.child > 0 ? `${objectPeople.child} trẻ em` : ''} ${objectPeople.elderly > 0 ? `${objectPeople.elderly} nguời già` : ''}`
                 }
-                else{
+                else {
                     displaySelect.innerHTML = "Chưa được chọn"
                 }
-              }
-           
+            }
+
         }
         showSelectValue()
-       
+
         if (arr3) {
             arr3.addEventListener("click", () => {
                 if (timeSelect) {
@@ -712,14 +722,14 @@ const selectOption = {
                 serviceSelect.classList.remove("active");
             });
         }
-        $(document).on("click", function (e) {
-            if (
-                $(e.target).closest(".options-select").length === 0 &&
-                $(e.target).closest(".cano-service").length === 0
-            ) {
-                $(".options-select").removeClass("active");
-            }
-        });
+        // $(document).on("click", function (e) {
+        //     if (
+        //         $(e.target).closest(".options-select").length === 0 &&
+        //         $(e.target).closest(".cano-service").length === 0
+        //     ) {
+        //         $(".options-select").removeClass("active");
+        //     }
+        // });
     },
 };
 /* ============================= 12, play video  ============================= */
@@ -1051,94 +1061,6 @@ const filterDextop = {
     },
 };
 
-/* ============================= 16 Select options trang dat ve cano  ============================= */
-
-const selectOption1 = {
-    init: function () {
-        this.selectMenu();
-    },
-    selectMenu: function () {
-        const removeactive = document.querySelector(".booking__train-infor");
-        const arrowBtn = document.querySelector("#selectMenu1");
-        const optionMenu = document.querySelector("#options-select1");
-        const serviceBox = document.querySelector(".cano-service");
-        const customSelectWrapper = document.querySelector("#custom-select1");
-        if (!customSelectWrapper) {
-            return;
-        }
-        const displaySelect =
-            customSelectWrapper.querySelector("#display-select1");
-        const optionsSelect = customSelectWrapper.querySelectorAll(
-            "#options-select1 li"
-        );
-
-        // $(".decrease-btn").bind("click", function () {
-        //     var value = Number($(this).parent().find(".value-btn").html());
-        //     if (value == 0) return;
-        //     $(this)
-        //         .parent()
-        //         .find(".value-btn")
-        //         .html(value - 1);
-        //     $(this)
-        //         .parent()
-        //         .find("input")
-        //         .val(value - 1);
-        //     displaySelectValue();
-        // });
-        // $(".increase-btn").bind("click", function () {
-        //     var value = Number($(this).parent().find(".value-btn").html());
-        //     $(this)
-        //         .parent()
-        //         .find(".value-btn")
-        //         .html(value + 1);
-        //     $(this)
-        //         .parent()
-        //         .find("input")
-        //         .val(value + 1);
-        //     displaySelectValue();
-        // });
-        arrowBtn.addEventListener("click", (e) => {
-            if ($(e.target).closest(".options-select").length === 0) {
-                optionMenu.classList.toggle("active");
-                serviceBox.classList.remove("change-br");
-            }
-        });
-        const displaySelectValue = () => {
-            let nguoiLonValue, treEmValue, nguoiGiaValue;
-            const allValueBtn = document.querySelectorAll(
-                "#options-select1 .value-btn"
-            );
-            const data = [];
-            allValueBtn.forEach((item) => {
-                if (item.dataset.value === "adults")
-                    nguoiLonValue = item.innerHTML;
-                if (item.dataset.value === "child") treEmValue = item.innerHTML;
-                if (item.dataset.value === "elderly")
-                    nguoiGiaValue = item.innerHTML;
-            });
-            if (Number(nguoiLonValue) > 0)
-                data.push(`${nguoiLonValue} người lớn`);
-            if (Number(treEmValue) > 0) data.push(`${treEmValue} trẻ em`);
-            if (Number(nguoiGiaValue) > 0)
-                data.push(`${nguoiGiaValue} người già`);
-
-            if (data.length === 0) {
-                displaySelect.innerHTML = "Chưa được chọn";
-            } else {
-                displaySelect.innerHTML = data.toString();
-            }
-        };
-        // displaySelectValue();
-        $(document).on("click", function (e) {
-            if (
-                $(e.target).closest(".options-select").length === 0 &&
-                $(e.target).closest(".booking__train-infor").length === 0
-            ) {
-                $(".options-select").removeClass("active");
-            }
-        });
-    },
-};
 
 /* ============================= 17 showMoreDetailYatch  ============================= */
 const showMoreDetailYatch = {
@@ -1260,9 +1182,8 @@ const toastMessage = {
         return Math.floor(Math.random() * 12);
     },
     generateName() {
-        return `${this.firstName[this.generateIndex()]} ${
-            this.middleName[this.generateIndex()]
-        } ${this.lastName[this.generateIndex()]} `;
+        return `${this.firstName[this.generateIndex()]} ${this.middleName[this.generateIndex()]
+            } ${this.lastName[this.generateIndex()]} `;
     },
     generatePhone() {
         return `09${Math.floor(Math.random() * 4000)}xxxx`;
@@ -1405,36 +1326,32 @@ const comment = {
         if (isMobile) {
             newComment = `
                             <li class="comment-list__item py-4">
-                                <h3 class="comment-list__item-name comment-list__item-text mb-0">${
-                                    objComment.name
-                                }</h3>
+                                <h3 class="comment-list__item-name comment-list__item-text mb-0">${objComment.name
+                }</h3>
                                 <div class="d-flex align-items-center">
                                     <p class="comment-list__item-text comment-list__item-date mb-0">Thang 05, 2021</p>
                                     <div class="comment-list__item-rate">${this.handleStarSubmit(
-                                        objComment["rate-stars"],
-                                        isMobile
-                                    )}</div>
+                    objComment["rate-stars"],
+                    isMobile
+                )}</div>
                                 </div>
-                                <p class="comment-list__item-text reduce mb-0">${
-                                    objComment.feedback
-                                }</p>
+                                <p class="comment-list__item-text reduce mb-0">${objComment.feedback
+                }</p>
                             </li>
             `;
         } else {
             newComment = `
                             <li class="comment-list__item py-4">
-                                <h3 class="comment-list__item-name comment-list__item-text mb-0">${
-                                    objComment.name
-                                }</h3>
+                                <h3 class="comment-list__item-name comment-list__item-text mb-0">${objComment.name
+                }</h3>
                                 <div class="comment-list__item-rate mb-2">${this.handleStarSubmit(
-                                    objComment["rate-stars"],
-                                    isMobile
-                                )}</div>
+                    objComment["rate-stars"],
+                    isMobile
+                )}</div>
                                 <div class="d-flex">
                                     <p class="comment-list__item-text comment-list__item-date mb-0 mr-4">Thang 05, 2021</p>
-                                    <p class="comment-list__item-text reduce mb-0">${
-                                        objComment.feedback
-                                    }</p>
+                                    <p class="comment-list__item-text reduce mb-0">${objComment.feedback
+                }</p>
                                 </div>
                             </li>
                             `;
@@ -1563,8 +1480,8 @@ Validator.isRequired = (selector, msg) => {
             return value.trim().length >= 6
                 ? undefined
                 : value.trim().length === 0
-                ? "Hãy nhập trường này"
-                : msg;
+                    ? "Hãy nhập trường này"
+                    : msg;
         },
     };
 };

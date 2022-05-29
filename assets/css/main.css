@@ -713,6 +713,9 @@ button {
     .banner-cano-inner .cano-service-detail .left-img img {
         width: 90%
     }
+    .banner-train-booking .cano-service-detail .left-img img {
+        width: 72%
+    }
 }
 
 @media (max-width:1024px) {
@@ -924,6 +927,10 @@ button {
 @media (max-width:585px) {
     .banner-cano-inner .cano-service-detail .detail-left .left-content .content-bottom {
         font-size: 18px;
+        max-width: 100%
+    }
+    .banner-train-booking .cano-service-detail .detail-left .left-content .content-bottom {
+        font-size: 14px;
         max-width: 100%
     }
 }
@@ -1387,6 +1394,14 @@ button {
     .banner-boat .cano-service-detail:focus,
     .banner-boat .cano-service-detail:hover {
         border: 1px solid #a4bfd3
+    }
+    .banner-train-booking .cano-service-detail{
+        border:unset;
+        padding: 5px 0;
+    }
+    .banner-train-booking .cano-service-detail:focus,
+    .banner-train-booking .cano-service-detail:hover {
+        border: unset;
     }
 }
 
@@ -11704,4 +11719,9 @@ section.news-mb .component__pagination {
 }
 p{
     margin-bottom: 0;
+}
+
+.booking__train-section .cano-service-detail .detail-left .left-content .select-train-booking.active{
+    left: -66px;
+    top: 57px;
 }
