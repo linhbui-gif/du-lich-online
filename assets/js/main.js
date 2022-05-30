@@ -43,6 +43,7 @@ $(document).ready(function () {
     comment.init();
     reviewButtonClick.init();
     setMinDate.init();
+    selectOption1.init();
     videoTauThamVinh.init();
 });
 
@@ -663,6 +664,7 @@ const selectOption = {
         });
 
         arr2.addEventListener("click", () => {
+            console.log('123')
             optionMenu.classList.remove("active");
             serviceSelect.classList.toggle("active");
             serviceBox.classList.toggle("change-br");
@@ -1060,7 +1062,7 @@ const selectOption1 = {
     selectMenu: function () {
         const removeactive = document.querySelector(".booking__train-infor");
         const arrowBtn = document.querySelector("#selectMenu1");
-        const optionMenu = document.querySelector("#options-select1");
+        const optionMenu = arrowBtn.querySelector("#options-select1");
         const serviceBox = document.querySelector(".cano-service");
         const customSelectWrapper = document.querySelector("#custom-select1");
         if (!customSelectWrapper) {
@@ -1071,72 +1073,43 @@ const selectOption1 = {
         const optionsSelect = customSelectWrapper.querySelectorAll(
             "#options-select1 li"
         );
-
-        // $(".decrease-btn").bind("click", function () {
-        //     var value = Number($(this).parent().find(".value-btn").html());
-        //     if (value == 0) return;
-        //     $(this)
-        //         .parent()
-        //         .find(".value-btn")
-        //         .html(value - 1);
-        //     $(this)
-        //         .parent()
-        //         .find("input")
-        //         .val(value - 1);
-        //     displaySelectValue();
-        // });
-        // $(".increase-btn").bind("click", function () {
-        //     var value = Number($(this).parent().find(".value-btn").html());
-        //     $(this)
-        //         .parent()
-        //         .find(".value-btn")
-        //         .html(value + 1);
-        //     $(this)
-        //         .parent()
-        //         .find("input")
-        //         .val(value + 1);
-        //     displaySelectValue();
-        // });
         arrowBtn.addEventListener("click", (e) => {
+            console.log($(e.target).closest(".options-select"));
             if ($(e.target).closest(".options-select").length === 0) {
-                optionMenu.classList.toggle("active");
+               
                 serviceBox.classList.remove("change-br");
             }
         });
-        const displaySelectValue = () => {
-            let nguoiLonValue, treEmValue, nguoiGiaValue;
-            const allValueBtn = document.querySelectorAll(
-                "#options-select1 .value-btn"
-            );
-            const data = [];
-            allValueBtn.forEach((item) => {
-                if (item.dataset.value === "adults")
-                    nguoiLonValue = item.innerHTML;
-                if (item.dataset.value === "child") treEmValue = item.innerHTML;
-                if (item.dataset.value === "elderly")
-                    nguoiGiaValue = item.innerHTML;
-            });
-            if (Number(nguoiLonValue) > 0)
-                data.push(`${nguoiLonValue} người lớn`);
-            if (Number(treEmValue) > 0) data.push(`${treEmValue} trẻ em`);
-            if (Number(nguoiGiaValue) > 0)
-                data.push(`${nguoiGiaValue} người già`);
-
-            if (data.length === 0) {
-                displaySelect.innerHTML = "Chưa được chọn";
-            } else {
-                displaySelect.innerHTML = data.toString();
-            }
-        };
-        // displaySelectValue();
-        $(document).on("click", function (e) {
-            if (
-                $(e.target).closest(".options-select").length === 0 &&
-                $(e.target).closest(".booking__train-infor").length === 0
-            ) {
-                $(".options-select").removeClass("active");
-            }
-        });
+        // const displaySelectValue = () => {
+        //     const allValueBtn = [...document.querySelectorAll("#options-select1 .value-btn")];
+        //     let objectPeople = {};
+        //     allValueBtn.forEach(input => {
+        //         input.addEventListener('keypress', changeHandler)
+        //         input.addEventListener('change', changeHandler)
+        //     });
+        //     function changeHandler(e) {
+        //         objectPeople = {
+        //             ...objectPeople,
+        //             [e.target.name]: e.target.value,
+        //         }
+        //         if(objectPeople.adults > 0 || objectPeople.child > 0 || objectPeople.elderly > 0 ){
+        //             displaySelect.innerHTML = `${objectPeople.adults > 0 ? `${objectPeople.adults} nguời lớn` : ''}  ${objectPeople.child > 0 ? `${objectPeople.child} trẻ em` : ''} ${objectPeople.elderly > 0 ? `${objectPeople.elderly} nguời già` : ''}`
+        //         }
+        //         else{
+        //             displaySelect.innerHTML = "Chưa được chọn"
+        //         }
+        //       }
+           
+        // }
+        // displaySelectValue()
+        // $(document).on("click", function (e) {
+        //     if (
+        //         $(e.target).closest(".options-select").length === 0 &&
+        //         $(e.target).closest(".booking__train-infor").length === 0
+        //     ) {
+        //         $(".options-select").removeClass("active");
+        //     }
+        // });
     },
 };
 
