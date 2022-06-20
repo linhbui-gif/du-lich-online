@@ -1,3 +1,11 @@
+
+@font-face {
+  font-family: "SVN Future";
+  font-weight: 800;
+  src: url('../font/SVN-Futura-Black-Italic.woff2') format('opentype');
+}
+
+
 *,
 ::after,
 ::before {
@@ -25,7 +33,7 @@ html {
 body,
 input,
 textarea {
-    font-family: "Nunito Sans", sans-serif;
+    font-family:"SVN-Futura", sans-serif;
     font-weight: 400;
     color: #555
 }
@@ -666,7 +674,7 @@ button {
     margin-bottom: 25px;
     color: #fff;
     font-weight: 700;
-    font-family: "Nunito Sans", sans-serif
+    /* font-family: "Nunito Sans", sans-serif */
 }
 
 .banner-cano-inner .cano-title.pick-room-title {
