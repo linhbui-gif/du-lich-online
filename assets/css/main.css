@@ -11802,3 +11802,7 @@ p{
 .btn-find{
     font-weight: 700;
 }
+
+.newfeed-detail .newfeed-detail__main p {
+    font-family: 'Nunito Sans';
+}
