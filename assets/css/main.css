@@ -1,7 +1,7 @@
-
+/* SVN-Futura  */
 @font-face {
     font-family: "SVN-Futura";
-    font-weight: 800;
+    font-weight: 900;
     src: url('../font/SVN-Futura-Black.woff2') format('woff2');
   }
 @font-face {
@@ -29,6 +29,65 @@
     font-weight: 400;
     src: url('../font/SVN-Futura-Regular.woff2') format('woff2');
   }
+/* nunito san  */
+  
+@font-face {
+    font-family: "Nunito-Sans";
+    font-weight: 900;
+    src: url('../font/nunito-san/NunitoSans-Black.ttf') format('ttf');
+  }
+@font-face {
+    font-family: "Nunito-Sans";
+    font-weight: 700;
+    src: url('../font/nunito-san/NunitoSans-Bold.ttf') format('ttf');
+  }
+@font-face {
+    font-family: "Nunito-Sans";
+    font-weight: 400;
+    src: url('../font/nunito-san/NunitoSans-Regular.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: "Nunito-Sans";
+    font-weight: 600;
+    src: url('../font/nunito-san/NunitoSans-SemiBold.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: "Nunito-Sans";
+    font-weight: 800;
+    src: url('../font/nunito-san/NunitoSans-ExtraBold.ttf') format('ttf');
+  }
+  /* Nutino  */
+  @font-face {
+    font-family: "Nunito";
+    font-weight: 900;
+    src: url('../font/nunito/Nunito-Black.ttf') format('ttf');
+  }
+@font-face {
+    font-family: "Nunito";
+    font-weight: 700;
+    src: url('../font/nunito/Nunito-Bold.ttf') format('ttf');
+  }
+@font-face {
+    font-family: "Nunito";
+    font-weight: 400;
+    src: url('../font/nunito/Nunito-Regular.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: "Nunito";
+    font-weight: 600;
+    src: url('../font/nunito/Nunito-SemiBold.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: "Nunito";
+    font-weight: 800;
+    src: url('../font/nunito/Nunito-ExtraBold.ttf') format('ttf');
+  }
+  /* Mavenpro */
+@font-face {
+    font-family: "Mavenpro";
+    font-weight: 400;
+    src: url('../font/mavenpro/MavenPro-Regular.ttf');
+}
 *,
 ::after,
 ::before {
@@ -266,7 +325,7 @@ button {
 }
 
 .client-service-section .client-service__box-content {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 16px;
     color: #697fa2;
     margin-top: 22px
@@ -277,7 +336,8 @@ button {
         margin-top: 38px;
         margin-bottom: 0;
         line-height: 24px;
-        font-weight: 400
+        font-weight: 400;
+        font-family:"Nunito-Sans", sans-serif;
     }
 }
 
@@ -399,7 +459,7 @@ button {
 }
 
 .box-yacht-horizontal__info ul li {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
@@ -476,7 +536,7 @@ button {
 }
 
 .box-yacht-horizontal__info-reserve .price .price-old {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1;
@@ -572,7 +632,9 @@ button {
     line-height: 1;
     border: 1px solid #fff;
     background-color: #e0f3fb;
-    color: #479dc1
+    color: #479dc1;
+    font-family: 'Nunito';
+
 }
 
 .btn-hover-wrapper span.btn-hover:hover {
@@ -633,6 +695,10 @@ button {
         width: 90%;
         margin-left: 2px
     }
+    .banner-boat .cano-service .btn {
+        font-family: 'SVN-Futura';
+    }
+  
 }
 
 .partner-slider-section .owl-carousel .owl-stage {
@@ -651,12 +717,15 @@ button {
 .banner-cano {
     display: flex;
     align-items: flex-end;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 @media (max-width:768px) {
     .banner-cano {
         height: 500px !important
+    }
+    .banner-boat .cano-service .btn {
+        font-family: 'SVN-Futura' !important;
     }
 }
 
@@ -665,7 +734,7 @@ button {
     color: #23305d;
     font-weight: 600;
     line-height: 45px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "SVN-Futura", sans-serif
 }
 
 .banner-cano__txt:last-child {
@@ -676,7 +745,7 @@ button {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 20px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .banner-cano-inner .cano-service {
@@ -712,8 +781,8 @@ button {
     font-size: 60px;
     margin-bottom: 25px;
     color: #fff;
-    font-weight: 700;
-    font-family: "Nunito Sans", sans-serif
+    font-weight: 600;
+    font-family: "SVN-Futura", sans-serif
 }
 
 .banner-cano-inner .cano-title.pick-room-title {
@@ -837,6 +906,9 @@ button {
     .banner-cano-inner .cano-service-detail .detail-left .select-icon {
         width: 100%
     }
+    .banner-boat .cano-service .btn {
+        font-family: 'SVN-Futura';
+    }
 }
 
 .banner-cano-inner .cano-service-detail .detail-left .select-icon .icon-arrow-down {
@@ -864,6 +936,7 @@ button {
     .banner-cano-inner .cano-service-detail .detail-left .select-icon .icon-arrow-down {
         right: 0
     }
+   
 }
 
 .banner-cano-inner .cano-service-detail .detail-left .select-icon .icon-arrow-down.pt-ev {
@@ -879,6 +952,7 @@ button {
 }
 
 .banner-cano-inner .cano-service-detail .detail-left .left-content .content-head {
+    font-family: 'Nunito';
     color: #697fa2;
     font-size: 16px;
     cursor: pointer
@@ -896,7 +970,7 @@ button {
     color: #153262;
     font-weight: 600;
     font-size: 16px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .banner-cano-inner .cano-service-detail .detail-left .left-content .input__control::-webkit-input-placeholder {
@@ -969,16 +1043,23 @@ button {
     .banner-cano-inner .cano-service-detail .detail-left .left-content .content-bottom {
         max-width: 130px
     }
+    .banner-boat .cano-service .btn {
+        font-family: 'SVN-Futura';
+    }
 }
 
 @media (max-width:585px) {
     .banner-cano-inner .cano-service-detail .detail-left .left-content .content-bottom {
         font-size: 18px;
+       
         max-width: 100%
     }
     .banner-train-booking .cano-service-detail .detail-left .left-content .content-bottom {
         font-size: 14px;
         max-width: 100%
+    }
+    .banner-boat .cano-service .btn {
+        font-family: 'SVN-Futura';
     }
 }
 
@@ -1057,6 +1138,9 @@ button {
     .banner-cano-inner .cano-service-detail .detail-left .left-content .options-select .content-left span {
         font-size: 13px
     }
+    .banner-boat .cano-service .btn {
+        font-family: 'SVN-Futura';
+    }
 }
 
 .banner-cano-inner .cano-service-detail .detail-left .left-content .options-select .content-left p {
@@ -1088,7 +1172,9 @@ button {
 .banner-cano-inner .cano-service-detail .detail-left .left-content .services-list {
     left: -40%;
     width: 350px
+
 }
+
 
 @media (max-width:1024px) {
     .banner-cano-inner .cano-service-detail .detail-left .left-content .services-list {
@@ -1149,6 +1235,7 @@ button {
 }
 
 .banner-cano-inner .cano-service .btn-find-link {
+    font-family: 'Nunito';
     display: inline-block;
     color: #fff;
     text-transform: uppercase;
@@ -1176,8 +1263,8 @@ button {
     outline: 0;
     color: #153262;
     font-weight: 700;
-    font-size: 14px;
-    font-family:"SVN-Futura", sans-serif;
+    font-size: 16px;
+    font-family:"Nunito-Sans", sans-serif;
     padding: 0;
     background-color: transparent
 }
@@ -1475,7 +1562,7 @@ button {
     padding: 11px 15px;
     font-weight: 600;
     font-size: 24px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 @media (max-width:565px) {
@@ -1495,7 +1582,7 @@ button {
     }
 
     .banner-mobile .banner-mobile-item .item-detail {
-        font-family: "Nunito Sans", sans-serif
+        font-family: "Nunito-Sans", sans-serif
     }
 
     .banner-mobile .banner-mobile-item .item-detail .detail-left {
@@ -1563,7 +1650,7 @@ button {
         color: #153262;
         font-weight: 600;
         font-size: 18px;
-        font-family: "Nunito Sans", sans-serif
+        font-family: "Nunito-Sans", sans-serif
     }
 
     .banner-mobile .banner-mobile-item .item-detail .detail-left .left-content .input__control::-webkit-input-placeholder {
@@ -1612,7 +1699,20 @@ button {
         color: #fff;
         font-size: 24px;
         font-weight: 600;
-        font-family: "Nunito Sans", sans-serif
+        font-family: "SVN-Futura", sans-serif
+    }
+    .card-top-button a {
+        font-family: 'Nunito-Sans',sans-serif
+    }
+    .ship-card-item .ship-card .card-detail-item {
+        font-family: 'Nunito-Sans',sans-serif !important;
+    }
+    .ship-card-item .ship-card .card-btn a {
+        font-family: 'Nunito-Sans',sans-serif;
+    }
+    
+    .ship-card-item .ship-card .btn-sale {
+        font-family: 'Nunito-Sans',sans-serif !important;
     }
 
     .banner-mobile .flatpickr-input {
@@ -1680,8 +1780,9 @@ button {
 }
 
 .bread-crumb-section .bread-crumb__links {
+    font-family: 'SVN-Futura';
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     color: #847d7d
 }
 
@@ -1930,7 +2031,7 @@ button {
 }
 
 .box__cano .box__cano-wrapper .cano__wrapper-infor .wrapper__infor-detail ul li {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.88;
@@ -1967,7 +2068,8 @@ button {
 
 @media only screen and (max-width:425px) {
     .box__cano .box__cano-wrapper .cano__wrapper-infor .wrapper__rule-detail p {
-        color: #616980
+        color: #616980;
+        font-family: 'Nunito-Sans',sans-serif;
     }
 }
 
@@ -1996,6 +2098,7 @@ button {
 @media only screen and (max-width:425px) {
     .box__cano .box__cano-wrapper .cano__wrapper-book .book__other-cost .cost-per-person {
         font-size: 16px;
+        font-family: 'Nunito-Sans',sans-serif;
         color: #10284f
     }
 }
@@ -2015,7 +2118,7 @@ button {
     }
 
     .box__cano .box__cano-wrapper .cano__wrapper-book span.sale-off {
-        font-family:"SVN-Futura", sans-serif;
+        font-family:"Nunito-Sans", sans-serif;
         display: block;
         color: #fff;
         padding: 5px 10px;
@@ -2047,7 +2150,8 @@ button {
 
 @media only screen and (max-width:426px) {
     .box__cano .box__cano-wrapper .cano__wrapper-book p.new-cost {
-        margin-bottom: 0
+        margin-bottom: 0;
+        font-family: 'Nunito-Sans',sans-serif;
     }
 }
 
@@ -2061,7 +2165,8 @@ button {
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    font-family: 'Nunito';
 }
 
 @media only screen and (max-width:991px) {
@@ -2072,7 +2177,8 @@ button {
 
 @media only screen and (max-width:426px) {
     .box__cano .box__cano-wrapper .cano__wrapper-book p.old-cost {
-        margin-bottom: 0
+        margin-bottom: 0;
+        font-family: 'SVN-Futura',sans-serif;
     }
 }
 
@@ -2192,7 +2298,7 @@ button {
 }
 
 .box-discover-section__left-text {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito", sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-stretch: normal;
@@ -2365,7 +2471,7 @@ button {
     border-bottom-right-radius: 6px;
     line-height: 1;
     font-size: 13px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito", sans-serif
 }
 
 .yacht__items-text {
@@ -2380,12 +2486,12 @@ button {
     margin-bottom: 6px;
     color: #10284f;
     font-weight: 600;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "SVN-Futura", sans-serif
 }
 
 .yacht__items-text ul li {
-    font-family:"SVN-Futura", sans-serif;
-    font-size: 16px;
+    font-family:"Nunito-Sans", sans-serif;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.88;
     color: #949cb4;
@@ -2414,14 +2520,14 @@ button {
     color: #10284f;
     font-weight: 700;
     margin: 20px 10px 20px 0;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "SVN-Futura", sans-serif
 }
 
 .yacht__items-text .price span {
     font-size: 16px;
     color: #949cb4;
     text-decoration: line-through;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito", sans-serif
 }
 
 .yacht__items-text .btn-booking {
@@ -2435,7 +2541,7 @@ button {
     display: block;
     border-radius: 6px;
     transition: .3s;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "SVN-Futura", sans-serif
 }
 
 .yacht__items-text .btn-booking:hover {
@@ -2475,7 +2581,8 @@ button {
 .box-menu-order-section .menu__order-wrap .menu__order-items .order-items-text p {
     color: #7b8492;
     font-size: 16px;
-    transition: .3s
+    transition: .3s;
+    font-family: 'Nunito-Sans';
 }
 
 @media only screen and (max-width:991px) {
@@ -2518,7 +2625,8 @@ button {
 
 .box-menu-order-section .menu__order-wrap .menu__order-items .order-items-text.active p {
     color: #f54f3f;
-    font-weight: 700
+    font-weight: 700;
+    font-family: 'Nunito-Sans';
 }
 
 .box-menu-order-section .menu__order-wrap .menu__order-items .line {
@@ -2588,9 +2696,10 @@ button {
 }
 
 .box-discover-more-section .discover-more__content .content__text {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    font-weight: normal;
     color: #616980;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
@@ -2669,7 +2778,7 @@ button {
     background-color: #f54f3f;
     top: 34px;
     z-index: 1;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito", sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 30px;
@@ -2795,27 +2904,31 @@ button {
 .box-where-go-section .box-where-go__box-img .img__content-place {
     margin-bottom: 0;
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito", sans-serif;
+    font-weight: bold;
     color: #fff
 }
 
 @media only screen and (max-width:425px) {
     .box-where-go-section .box-where-go__box-img .img__content-place {
         font-size: 18px;
-        line-height: 24.55px
+        line-height: 24.55px;
+        font-family: 'Nunito Sans';
+        font-weight: 600;
     }
 }
 
 .box-where-go-section .box-where-go__box-img .img__content-visitor {
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito", sans-serif;
     color: #fff
 }
 
 @media only screen and (max-width:425px) {
     .box-where-go-section .box-where-go__box-img .img__content-visitor {
         font-size: 14px;
-        line-height: 19.1px
+        line-height: 19.1px;
+        font-family: 'Nunito Sans';
     }
 }
 
@@ -2916,7 +3029,7 @@ button {
     border-radius: 10px;
     color: #fff;
     font-size: 16px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .comment-box__form .form-group .form-btn:hover {
@@ -3030,7 +3143,7 @@ button {
     color: #1c274e;
     font-size: 16px !important;
     font-weight: 500 !important;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 @media only screen and (max-width:768px) {
@@ -3144,6 +3257,9 @@ button {
 }
 
 .filter-section .filter .filter__detail-select .select-value span {
+    font-family: "MavenPro";
+    font-size: 16px;
+    font-weight: normal;
     flex: 1
 }
 
@@ -3303,7 +3419,7 @@ button {
     display: inline-block;
     color: #555;
     font-size: 16px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .filter-section .filter__radio .radio-detail .radio__detail-list .radio [type=radio]:checked+label,
@@ -3315,7 +3431,7 @@ button {
     display: inline-block;
     color: #555;
     font-size: 16px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .filter-section .filter__radio .radio-detail .radio__detail-list .radio [type=radio]:checked+label:before,
@@ -3403,7 +3519,7 @@ button {
     display: inline-block;
     color: #555;
     font-size: 16px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .radio-ch [type=radio]:checked+span,
@@ -3415,7 +3531,7 @@ button {
     display: inline-block;
     color: #616980;
     font-size: 16px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .radio-ch [type=radio]:checked+span:before,
@@ -3524,7 +3640,7 @@ button {
 }
 
 .service-section .service__main-content .box__service-content .content__detail-right h4 {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 16px;
     color: #fff;
     margin-top: 6px
@@ -3637,7 +3753,7 @@ button {
 }
 
 .why-choose-section .why-choose__item-desc h4 {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: normal;
@@ -3654,7 +3770,7 @@ button {
 }
 
 .why-choose-section .why-choose__item-desc p {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans",sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #404656
@@ -3669,6 +3785,15 @@ button {
 @media only screen and (max-width:525px) {
     .why-choose-section .col-lg-3.col-md-6:last-child .why-choose__item {
         padding-bottom: 0
+    }
+    .detail-ship-section .detail-ship__box-sale {
+        font-family: "Nunito-Sans", sans-serif !important;
+    }
+    .detail-ship-section .detail-ship__box ul li {
+        font-family: "Nunito-Sans", sans-serif !important;
+    }
+    .register-success-section__content-btn .btn__content {
+        font-family: 'SVN-Futura',s;
     }
 }
 
@@ -3846,7 +3971,7 @@ button {
 }
 
 .schedule-section .schedule__toDo-bevh span {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #404656
@@ -3860,7 +3985,7 @@ button {
 
 .schedule-section .schedule__toDo-time {
     display: block;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.5;
@@ -3978,12 +4103,13 @@ button {
     font-size: 16px;
     line-height: 1.5;
     color: #616980;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito", sans-serif
 }
 
 @media only screen and (max-width:425px) {
     .happy__client__wrapper .happy__client__item p {
-        margin-bottom: 40px
+        margin-bottom: 40px;
+        font-family: 'Nunito-Sans',sans-serif;
     }
 }
 
@@ -4454,7 +4580,7 @@ button {
     display: block;
     border-radius: 6px;
     transition: .3s;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .box-yacht-mobile__section .yacht-mobile__items .yacht-item__text a.btn-booking:hover {
@@ -4511,7 +4637,8 @@ button {
 @media only screen and (max-width:426px) {
     .ship-card-item .ship-card .card-img .card-img-button {
         right: 20px;
-        bottom: 15px
+        bottom: 15px;
+        font-family: 'Nunito-Sans',sans-serif;
     }
 }
 
@@ -4869,7 +4996,7 @@ button {
     color: #10284f;
     font-weight: 700;
     margin-bottom: 30px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .fiter-mb__more .submit {
@@ -5295,7 +5422,7 @@ button {
 }
 
 .newfeed-detail__main-author {
-    font-family: Nunito Sans;
+    font-family: Nunito-Sans;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -6120,7 +6247,7 @@ button {
 
 .footer .footer__section .footer-top .footer__list-item .list-description {
     padding-top: 5px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
@@ -6146,7 +6273,7 @@ button {
 }
 
 .footer .footer__section .footer-top .footer__list-item .deal {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: normal;
@@ -6225,12 +6352,12 @@ button {
 @media only screen and (max-width:768px) {
     .footer .footer__section .footer-middle .footer-soli .footer__list-follow {
         padding-right: 30px;
-        font-family: "Nunito Sans", sans-serif
+        font-family: "Nunito-Sans", sans-serif
     }
 }
 
 .footer .footer__section .footer-middle .footer-soli .footer__list-follow .follow__title {
-    font-family: "Nunito Sans", sans-serif
+    font-family: "SVN-Futura", sans-serif
 }
 
 .footer .footer__section .footer-middle .footer-soli .follow-social img {
@@ -6296,7 +6423,7 @@ button {
 }
 
 .footer .footer__section .footer-bottom .footer__list-content .content__item a {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 14px;
     line-height: 2.57;
     letter-spacing: normal;
@@ -6338,7 +6465,8 @@ button {
     border-radius: 6px;
     background-color: #fff;
     border: none;
-    outline: 0
+    outline: 0;
+    font-family: "Nunito-Sans";
 }
 
 .footer .footer__section .footer__list-item .list-form .ic_next {
@@ -6382,7 +6510,7 @@ button {
 }
 
 .footer .footer__section .footer-copyright .footer__copyright-list .copyright-title {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 14px;
     line-height: 2.57;
     letter-spacing: normal;
@@ -6566,7 +6694,7 @@ button {
     color: #153262;
     font-weight: 600;
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     padding: 0;
     background-color: transparent
 }
@@ -6660,7 +6788,7 @@ button {
     color: #153262;
     font-weight: 600;
     font-size: 16px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__train-section .cano-service-detail .detail-left .left-content .input__control::-webkit-input-placeholder {
@@ -6955,7 +7083,7 @@ button {
     font-size: 16px;
     font-weight: 700;
     color: #10284f;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito", sans-serif
 }
 
 .booking__train-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__form-infor input {
@@ -6964,7 +7092,7 @@ button {
     padding: 8px 31px;
     color: #10284f;
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito", sans-serif;
     outline: 0
 }
 
@@ -6978,7 +7106,7 @@ button {
 
 .booking__train-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__form-note h4 {
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito", sans-serif;
     color: #10284f;
     font-weight: 700
 }
@@ -7006,7 +7134,7 @@ button {
 .booking__train-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__form-p p {
     font-size: 16px;
     font-weight: 400;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito", sans-serif;
     color: #616980;
     margin-bottom: 10px
 }
@@ -7034,7 +7162,7 @@ button {
 
 .booking__train-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__form-text h4 {
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-weight: 700;
     color: #10284f
 }
@@ -7051,7 +7179,7 @@ button {
     font-size: 14px;
     font-weight: 400;
     color: #616980;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     margin-left: 30px;
     width: calc(100% - 20px)
 }
@@ -7105,13 +7233,15 @@ button {
 }
 
 .booking__train-section .booking__train-wrapper .train__wrapper-service .wrapper__service-price .service__price-checkbox .service__checkbox label {
-    margin-left: 20px
+    margin-left: 20px;
+    font-family:"Nunito-Sans", sans-serif;
 }
 
 .booking__train-section .booking__train-wrapper .train__wrapper-service .wrapper__service-price .service__price-checkbox p {
     margin-bottom: 0;
     margin-left: 20px;
-    font-size: 18px
+    font-size: 18px;
+    font-family:"Nunito-Sans", sans-serif;
 }
 
 .booking__train-section .booking__train-wrapper .train__wrapper-refund {
@@ -7164,7 +7294,7 @@ button {
     color: #505a6d;
     margin-right: 23px;
     font-weight: 700;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     white-space: nowrap
 }
 
@@ -7187,14 +7317,14 @@ button {
     font-size: 18px;
     margin-right: 23px;
     font-weight: 700;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     white-space: nowrap
 }
 
 .booking__train-section .booking__train-infor .infor__details-description .text-color span {
     color: #616980;
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-weight: 400
 }
 
@@ -7217,7 +7347,7 @@ button {
 .booking__train-section .booking__train-infor .infor__details-description p.border-b span.d-flex.flex-row.align-items-center {
     font-size: 16px;
     font-weight: 700;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__train-section .booking__train-infor .train__infor-sale {
@@ -7239,7 +7369,7 @@ button {
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-title p {
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-weight: 400;
     color: #616980;
     margin-bottom: 0
@@ -7255,40 +7385,41 @@ button {
     border-radius: 4px;
     padding: 10px;
     width: 70%;
-    outline: 0
+    outline: 0;
+    font-family:"Nunito-Sans", sans-serif;
 }
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-km ::-webkit-input-placeholder {
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-weight: 400;
     color: #616980
 }
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-km ::-moz-placeholder {
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-weight: 400;
     color: #616980
 }
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-km :-ms-input-placeholder {
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-weight: 400;
     color: #616980
 }
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-km ::-ms-input-placeholder {
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-weight: 400;
     color: #616980
 }
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-km ::placeholder {
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-weight: 400;
     color: #616980
 }
@@ -7309,7 +7440,7 @@ button {
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-km button a {
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-weight: 700;
     white-space: nowrap;
     color: #768896
@@ -7324,7 +7455,7 @@ button {
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-totle div,
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-totle p {
     font-size: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     color: #616980;
     font-weight: 400
 }
@@ -7343,7 +7474,7 @@ button {
     color: #505a6d;
     font-weight: 700;
     font-size: 16px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-totle .summary {
@@ -7357,7 +7488,7 @@ button {
 
 .booking__train-section .booking__train-sig p {
     font-size: 14px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-weight: 400;
     color: #545c72
 }
@@ -7376,7 +7507,7 @@ button {
     padding: 15px 45px;
     margin-right: 16px;
     outline: 0;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__train-section .train__wrapper-btn .wrapper__btn-btn button.btn__btn-button.other-color {
@@ -7388,7 +7519,7 @@ button {
     border-radius: 4px;
     padding: 15px 45px;
     outline: 0;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__train-section #flatpickr-custom .flatpickr-calendar {
@@ -7454,7 +7585,7 @@ button {
     width: 432px;
     height: 66px;
     margin: 40px auto 31px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
     font-stretch: normal;
@@ -7492,7 +7623,7 @@ button {
     width: 100%;
     border: none;
     color: #fff;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 50px
@@ -7607,7 +7738,7 @@ button {
 }
 
 .detail-ship-section .detail-ship__box ul li {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
@@ -7751,7 +7882,7 @@ button {
 }
 
 .detail-ship-section .detail-ship__box-book span {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #616980
@@ -7828,7 +7959,7 @@ button {
 }
 
 .tooltip .tooltiptext {
-    font-family: "Nunito Sans", sans-serif !important;
+    font-family: "Nunito-Sans", sans-serif !important;
     visibility: hidden;
     font-size: 12px !important;
     width: 150px;
@@ -7881,7 +8012,7 @@ button {
 
 .helicopter .box-helicopter .content-helicopter .title-top {
     margin: 63px 0 68px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito", sans-serif;
     font-size: 18px;
     font-weight: 700;
     text-align: left;
@@ -7890,7 +8021,7 @@ button {
 
 .helicopter .box-helicopter .content-helicopter .content__item {
     margin: 0 11px 33px 0;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito", sans-serif;
     line-height: 1.5;
     letter-spacing: normal;
     text-align: left;
@@ -7953,14 +8084,14 @@ button {
 }
 
 .helicopter .box-tiket .box-list .list__item span {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito", sans-serif;
     font-size: 16px;
     text-align: left;
     color: #616980
 }
 
 .helicopter .box-tiket .box-paytime .paytime__title {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito", sans-serif;
     font-size: 16px;
     text-align: left;
     color: #616980
@@ -8163,7 +8294,7 @@ button {
 .booking__train-confirm-wrapper .confirm__inner {
     background-color: #fff;
     border-radius: 10px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__title {
@@ -8174,7 +8305,7 @@ button {
     padding: 20px 40px;
     border-bottom: 1px solid #f2f7fb;
     margin-bottom: 0;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__content {
@@ -8196,13 +8327,13 @@ button {
     font-size: 16px;
     color: #10284f;
     font-weight: 700;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__desc,
 .booking__train-confirm-wrapper .confirm__txt {
     color: #616980;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__txt {
@@ -8228,7 +8359,7 @@ button {
 }
 
 .booking__train-confirm-wrapper .confirm__info-label span {
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__info-label img {
@@ -8241,7 +8372,7 @@ button {
     font-weight: 700;
     display: block;
     line-height: 36px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__total {
@@ -8252,14 +8383,14 @@ button {
     font-size: 20px;
     color: #616980;
     font-weight: 700;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__total-value {
     font-size: 24px;
     color: #f54f3f;
     font-weight: 700;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__bottom {
@@ -8293,7 +8424,7 @@ button {
     color: #545c72;
     font-size: 18px;
     margin-bottom: 0;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 @media only screen and (max-width:991px) {
@@ -8309,7 +8440,7 @@ button {
     outline: 0;
     font-size: 18px;
     font-weight: 700;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 @media only screen and (max-width:1199px) {
@@ -8439,7 +8570,7 @@ button {
     margin-bottom: 30px;
     font-family:"SVN-Futura", sans-serif;
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: normal;
     color: #10284f
 }
@@ -8741,7 +8872,8 @@ button {
 
 .detail-ship-mobile .detail-ship__box-book span {
     font-size: 16px;
-    color: #10284f
+    color: #10284f;
+
 }
 
 .detail-ship-mobile .detail-ship__box-book .book__btn {
@@ -8853,7 +8985,7 @@ button {
     margin-left: 10px;
     margin-bottom: 0;
     line-height: 25px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .mg-8 {
@@ -9105,7 +9237,7 @@ button {
 .booking__mb-section .booking__train-infor .infor__details-description p.border-b span.d-flex.flex-row.align-items-center {
     font-size: 16px;
     font-weight: 700;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__mb-section .booking__train-infor .train__infor-sale .infor__sale-title h4 {
@@ -9209,7 +9341,7 @@ button {
 .booking__mb-section .booking__train-infor .train__infor-sale .infor__sale-totle .wrapp .text-bold {
     color: #616980;
     font-size: 16px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .booking__mb-section .booking__train-sig {
@@ -9704,7 +9836,7 @@ button {
     color: #10284f;
     margin-bottom: 10px;
     line-height: 25px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .mg-8 {
@@ -9784,14 +9916,14 @@ button {
 
 .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__details p.fw {
     font-weight: 700;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__details p {
     font-size: 16px;
     font-weight: 600;
     color: #616980;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__details p span {
@@ -9923,7 +10055,7 @@ button {
 .confirm__mb-section .booking__train-infor .infor__details-description p.border-b span.d-flex.flex-row.align-items-center {
     font-size: 16px;
     font-weight: 700;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .confirm__mb-section .booking__train-infor .train__infor-sale h3 {
@@ -9959,7 +10091,7 @@ button {
 .confirm__mb-section .booking__train-infor .train__infor-sale .infor__sale-totle .wrapp .text-bold {
     color: #616980;
     font-size: 16px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .confirm__mb-section .booking__train-sig {
@@ -10117,7 +10249,7 @@ button {
     font-size: 18px;
     line-height: 25px;
     color: #10284f;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .yacht-details__mb .yacht-details__wrap .yacht-details__img .details__img-text .price p strong {
@@ -10136,7 +10268,7 @@ button {
     font-size: 16px;
     line-height: 22px;
     color: #fff;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .yacht-details__mb .yacht-details__wrap .info-section .info-text p {
@@ -10144,7 +10276,7 @@ button {
     font-size: 24px;
     line-height: 33px;
     color: #fff;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 .yacht-details__mb .yacht-details__wrap .description-section__wrap {
@@ -10306,7 +10438,7 @@ button {
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     color: #479dc1;
     background: #e0f3fb;
     margin-right: 8px;
@@ -10333,7 +10465,7 @@ button {
     -webkit-box-orient: vertical;
     font-size: 16px;
     line-height: 1.88;
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     color: #616980;
     position: relative;
     padding-left: 22px
@@ -10569,11 +10701,7 @@ button {
     }
 }
 
-@media only screen and (max-width:767px) {
-    .yach-details__section .banner-section__content h1 {
-        font-size: 35px
-    }
-}
+
 
 .yach-details__section .breadcrumb-section {
     padding: 20px 0;
@@ -10581,6 +10709,7 @@ button {
 }
 
 .yach-details__section .breadcrumb-section ul.breadcrumb-list li.breadcrumb-list__items a {
+    font-family: "SVN-Futura";
     font-size: 14px;
     font-weight: 600;
     color: #847d7d;
@@ -10899,7 +11028,7 @@ button {
     border-radius: 10px;
     color: #fff;
     font-size: 16px;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 @media only screen and (max-width:991px) {
@@ -11331,7 +11460,7 @@ button {
 }
 
 .proviso-page-mb-section .tab-content .proviso-tab-content p {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 16px;
     line-height: 1.375;
     color: #616980;
@@ -11357,11 +11486,11 @@ section.news .color-text {
 }
 
 section.news .font-svn {
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 section.news .font-nutisan {
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 section.news .news__breadcrum h1 {
@@ -11494,11 +11623,11 @@ section.news-mb .color-text {
 }
 
 section.news-mb .font-svn {
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 section.news-mb .font-nutisan {
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito-Sans", sans-serif
 }
 
 section.news-mb .news__breadcrum h1 {
@@ -11735,6 +11864,135 @@ section.news-mb .component__pagination {
     .page__404-main .main__text .text__service .text__service-item::after {
         margin-left: 5px
     }
+   
+    .yach-details__section .banner-section__content h1 {
+            font-size: 35px
+        }
+     .page__404-main .main__text .text__service .text__service-item {
+            font-family: 'SVN-Futura',sans-serif;
+        }
+    .register-success-section__content-btn .btn__content {
+            font-family: 'SVN-Futura',sans-serif;
+        }
+        .page__404-main .main__text .text__service .text__service-item {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-title h3 {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__form-infor p  {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__form-note p {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__form-p p span {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .confirm__mb-section .booking__train-wrapper .train__wrapper-service .wrapper__service-price .service__price-checkbox p {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .confirm__mb-section .booking__train-infor .train__infor-sale .infor__sale-totle p  {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .confirm__mb-section .booking__train-sig p {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .confirm__mb-section .booking__train-infor .train__infor-sale .infor__sale-totle div {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .btn-hover-wrapper span.btn-hover {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .box__cano .box__cano-wrapper .cano__wrapper-infor .wrapper__infor-detail ul li {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .helicopter-mb__content p {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .helicopter-mb__content h3 {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .helicopter-mb__tiket .discount {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .helicopter-mb__tiket ul li p {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .helicopter-mb__tiket .box-paytime .time p {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        section.news-mb .font-svn {
+            font-family: 'SVN-Futura',sans-serif;
+        }
+        .newfeed-detail__heading-date {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .newfeed-detail__heading-des {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .newfeed-detail .newfeed-detail__main p {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .newfeed-relation__box-date {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .newfeed-relation__box-des {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .newfeed-relation__box-next {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+          
+        .yacht-details__mb .yacht-details__wrap .info-section .info-text span{
+            font-family: 'Nunito-Sans',sans-serif;
+        } 
+        .yacht-details__mb .yacht-details__wrap .info-section .info-text p{
+            font-family: 'Nunito-Sans',sans-serif;
+        }  
+        .yacht-details__mb .yacht-details__wrap .description-section__wrap p{
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .yacht-details__mb .yacht-details__wrap .tab-content .tab a{
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .yacht-details__mb .yacht-details__wrap .tab-content .content h3 {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .yacht-details__mb .yacht-details__wrap .tab-content .content ul li p {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .banner-cano-inner .cano-service-detail .detail-left .left-content .content-head {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .box__cano .box__cano-wrapper .cano__wrapper-img button {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .yacht-details__mb .yacht-details__wrap .review-section__wrap span {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .yacht-details__mb .yacht-details__wrap .review-section__wrap .progress-group .check label {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .comment-box__rate p  {
+            font-family: 'Nunito-Sans',sans-serif;
+        }
+        .comment-box__form .flex-3 textarea {
+            font-family: 'Nunito-Sans',sans-serif;  
+        }
+        .comment-box__form .form-group .form-wrap input {
+            font-family: 'Nunito-Sans',sans-serif;  
+        }
+        .yacht-details__mb .yacht-details__wrap .recommend-section__wrap .recommend-content .img .discount span {
+            font-family: 'Nunito-Sans',sans-serif;  
+        }
+        .detail-ship-mobile .detail-ship__box-book span {
+            font-family: 'Nunito-Sans',sans-serif;  
+            
+        }
+        .proviso-page-mb-section .tab-content .tab a {
+            font-family: 'Nunito-Sans',sans-serif;      
+        }
 }
 
 .page__404-main .main__text .text__service .text__service-item:last-child::after {
@@ -11804,5 +12062,5 @@ p{
 }
 
 .newfeed-detail .newfeed-detail__main p {
-    font-family: 'Nunito Sans';
+    font-family: 'Nunito-Sans';
 }
