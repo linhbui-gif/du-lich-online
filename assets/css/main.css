@@ -30,34 +30,34 @@
     src: url('../font/SVN-Futura-Regular.woff2') format('woff2');
   }
 /* nunito san  */
-  
+/*   
 @font-face {
-    font-family: "Nunito-Sans";
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 900;
     src: url('../font/nunito-san/NunitoSans-Black.ttf') format('ttf');
   }
 @font-face {
-    font-family: "Nunito-Sans";
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 700;
     src: url('../font/nunito-san/NunitoSans-Bold.ttf') format('ttf');
   }
 @font-face {
-    font-family: "Nunito-Sans";
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     src: url('../font/nunito-san/NunitoSans-Regular.ttf') format('ttf');
   }
   @font-face {
-    font-family: "Nunito-Sans";
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 600;
     src: url('../font/nunito-san/NunitoSans-SemiBold.ttf') format('ttf');
   }
   @font-face {
-    font-family: "Nunito-Sans";
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 800;
     src: url('../font/nunito-san/NunitoSans-ExtraBold.ttf') format('ttf');
-  }
+  } */
   /* Nutino  */
-  @font-face {
+  /* @font-face {
     font-family: "Nunito";
     font-weight: 900;
     src: url('../font/nunito/Nunito-Black.ttf') format('ttf');
@@ -81,7 +81,7 @@
     font-family: "Nunito";
     font-weight: 800;
     src: url('../font/nunito/Nunito-ExtraBold.ttf') format('ttf');
-  }
+  } */
   /* Mavenpro */
 @font-face {
     font-family: "Mavenpro";
@@ -325,7 +325,7 @@ button {
 }
 
 .client-service-section .client-service__box-content {
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 16px;
     color: #697fa2;
     margin-top: 22px
@@ -337,7 +337,7 @@ button {
         margin-bottom: 0;
         line-height: 24px;
         font-weight: 400;
-        font-family:"Nunito-Sans", sans-serif;
+        font-family:"Nunito Sans", sans-serif, sans-serif;
     }
 }
 
@@ -459,7 +459,7 @@ button {
 }
 
 .box-yacht-horizontal__info ul li {
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
@@ -717,7 +717,7 @@ button {
 .banner-cano {
     display: flex;
     align-items: flex-end;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 @media (max-width:768px) {
@@ -745,7 +745,7 @@ button {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 20px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .banner-cano-inner .cano-service {
@@ -970,7 +970,7 @@ button {
     color: #153262;
     font-weight: 600;
     font-size: 16px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .banner-cano-inner .cano-service-detail .detail-left .left-content .input__control::-webkit-input-placeholder {
@@ -1264,7 +1264,7 @@ button {
     color: #153262;
     font-weight: 700;
     font-size: 16px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     padding: 0;
     background-color: transparent
 }
@@ -1562,7 +1562,7 @@ button {
     padding: 11px 15px;
     font-weight: 600;
     font-size: 24px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 @media (max-width:565px) {
@@ -1582,7 +1582,7 @@ button {
     }
 
     .banner-mobile .banner-mobile-item .item-detail {
-        font-family: "Nunito-Sans", sans-serif
+        font-family: "Nunito Sans", sans-serif, sans-serif
     }
 
     .banner-mobile .banner-mobile-item .item-detail .detail-left {
@@ -1650,7 +1650,7 @@ button {
         color: #153262;
         font-weight: 600;
         font-size: 18px;
-        font-family: "Nunito-Sans", sans-serif
+        font-family: "Nunito Sans", sans-serif, sans-serif
     }
 
     .banner-mobile .banner-mobile-item .item-detail .detail-left .left-content .input__control::-webkit-input-placeholder {
@@ -2118,7 +2118,7 @@ button {
     }
 
     .box__cano .box__cano-wrapper .cano__wrapper-book span.sale-off {
-        font-family:"Nunito-Sans", sans-serif;
+        font-family:"Nunito Sans", sans-serif, sans-serif;
         display: block;
         color: #fff;
         padding: 5px 10px;
@@ -2490,7 +2490,7 @@ button {
 }
 
 .yacht__items-text ul li {
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.88;
@@ -2696,7 +2696,7 @@ button {
 }
 
 .box-discover-more-section .discover-more__content .content__text {
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: normal;
@@ -3029,7 +3029,7 @@ button {
     border-radius: 10px;
     color: #fff;
     font-size: 16px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .comment-box__form .form-group .form-btn:hover {
@@ -3143,7 +3143,7 @@ button {
     color: #1c274e;
     font-size: 16px !important;
     font-weight: 500 !important;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 @media only screen and (max-width:768px) {
@@ -3419,7 +3419,7 @@ button {
     display: inline-block;
     color: #555;
     font-size: 16px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .filter-section .filter__radio .radio-detail .radio__detail-list .radio [type=radio]:checked+label,
@@ -3431,7 +3431,7 @@ button {
     display: inline-block;
     color: #555;
     font-size: 16px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .filter-section .filter__radio .radio-detail .radio__detail-list .radio [type=radio]:checked+label:before,
@@ -3519,7 +3519,7 @@ button {
     display: inline-block;
     color: #555;
     font-size: 16px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .radio-ch [type=radio]:checked+span,
@@ -3531,7 +3531,7 @@ button {
     display: inline-block;
     color: #616980;
     font-size: 16px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .radio-ch [type=radio]:checked+span:before,
@@ -3640,7 +3640,7 @@ button {
 }
 
 .service-section .service__main-content .box__service-content .content__detail-right h4 {
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 16px;
     color: #fff;
     margin-top: 6px
@@ -3753,7 +3753,7 @@ button {
 }
 
 .why-choose-section .why-choose__item-desc h4 {
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: normal;
@@ -3770,7 +3770,7 @@ button {
 }
 
 .why-choose-section .why-choose__item-desc p {
-    font-family:"Nunito-Sans",sans-serif;
+    font-family:"Nunito Sans", sans-serif,sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #404656
@@ -3787,10 +3787,10 @@ button {
         padding-bottom: 0
     }
     .detail-ship-section .detail-ship__box-sale {
-        font-family: "Nunito-Sans", sans-serif !important;
+        font-family: "Nunito Sans", sans-serif, sans-serif !important;
     }
     .detail-ship-section .detail-ship__box ul li {
-        font-family: "Nunito-Sans", sans-serif !important;
+        font-family: "Nunito Sans", sans-serif, sans-serif !important;
     }
     .register-success-section__content-btn .btn__content {
         font-family: 'SVN-Futura',s;
@@ -3971,7 +3971,7 @@ button {
 }
 
 .schedule-section .schedule__toDo-bevh span {
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #404656
@@ -3985,7 +3985,7 @@ button {
 
 .schedule-section .schedule__toDo-time {
     display: block;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.5;
@@ -4580,7 +4580,7 @@ button {
     display: block;
     border-radius: 6px;
     transition: .3s;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .box-yacht-mobile__section .yacht-mobile__items .yacht-item__text a.btn-booking:hover {
@@ -4996,7 +4996,7 @@ button {
     color: #10284f;
     font-weight: 700;
     margin-bottom: 30px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .fiter-mb__more .submit {
@@ -5301,7 +5301,7 @@ button {
 }
 
 .newfeed-detail__heading-des {
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 27px;
@@ -6245,7 +6245,7 @@ button {
 
 .footer .footer__section .footer-top .footer__list-item .list-description {
     padding-top: 5px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
@@ -6271,7 +6271,7 @@ button {
 }
 
 .footer .footer__section .footer-top .footer__list-item .deal {
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: normal;
@@ -6350,7 +6350,7 @@ button {
 @media only screen and (max-width:768px) {
     .footer .footer__section .footer-middle .footer-soli .footer__list-follow {
         padding-right: 30px;
-        font-family: "Nunito-Sans", sans-serif
+        font-family: "Nunito Sans", sans-serif, sans-serif
     }
 }
 
@@ -6421,7 +6421,7 @@ button {
 }
 
 .footer .footer__section .footer-bottom .footer__list-content .content__item a {
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 14px;
     line-height: 2.57;
     letter-spacing: normal;
@@ -6464,7 +6464,7 @@ button {
     background-color: #fff;
     border: none;
     outline: 0;
-    font-family: "Nunito-Sans";
+    font-family: "Nunito Sans", sans-serif;
 }
 
 .footer .footer__section .footer__list-item .list-form .ic_next {
@@ -6508,7 +6508,7 @@ button {
 }
 
 .footer .footer__section .footer-copyright .footer__copyright-list .copyright-title {
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 14px;
     line-height: 2.57;
     letter-spacing: normal;
@@ -6692,7 +6692,7 @@ button {
     color: #153262;
     font-weight: 600;
     font-size: 16px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     padding: 0;
     background-color: transparent
 }
@@ -6786,7 +6786,7 @@ button {
     color: #153262;
     font-weight: 600;
     font-size: 16px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__train-section .cano-service-detail .detail-left .left-content .input__control::-webkit-input-placeholder {
@@ -7160,7 +7160,7 @@ button {
 
 .booking__train-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__form-text h4 {
     font-size: 16px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-weight: 700;
     color: #10284f
 }
@@ -7177,7 +7177,7 @@ button {
     font-size: 14px;
     font-weight: 400;
     color: #616980;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     margin-left: 30px;
     width: calc(100% - 20px)
 }
@@ -7232,14 +7232,14 @@ button {
 
 .booking__train-section .booking__train-wrapper .train__wrapper-service .wrapper__service-price .service__price-checkbox .service__checkbox label {
     margin-left: 20px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
 }
 
 .booking__train-section .booking__train-wrapper .train__wrapper-service .wrapper__service-price .service__price-checkbox p {
     margin-bottom: 0;
     margin-left: 20px;
     font-size: 18px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
 }
 
 .booking__train-section .booking__train-wrapper .train__wrapper-refund {
@@ -7292,7 +7292,7 @@ button {
     color: #505a6d;
     margin-right: 23px;
     font-weight: 700;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     white-space: nowrap
 }
 
@@ -7315,14 +7315,14 @@ button {
     font-size: 18px;
     margin-right: 23px;
     font-weight: 700;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     white-space: nowrap
 }
 
 .booking__train-section .booking__train-infor .infor__details-description .text-color span {
     color: #616980;
     font-size: 16px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-weight: 400
 }
 
@@ -7345,7 +7345,7 @@ button {
 .booking__train-section .booking__train-infor .infor__details-description p.border-b span.d-flex.flex-row.align-items-center {
     font-size: 16px;
     font-weight: 700;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__train-section .booking__train-infor .train__infor-sale {
@@ -7367,7 +7367,7 @@ button {
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-title p {
     font-size: 16px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-weight: 400;
     color: #616980;
     margin-bottom: 0
@@ -7384,40 +7384,40 @@ button {
     padding: 10px;
     width: 70%;
     outline: 0;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
 }
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-km ::-webkit-input-placeholder {
     font-size: 16px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-weight: 400;
     color: #616980
 }
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-km ::-moz-placeholder {
     font-size: 16px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-weight: 400;
     color: #616980
 }
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-km :-ms-input-placeholder {
     font-size: 16px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-weight: 400;
     color: #616980
 }
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-km ::-ms-input-placeholder {
     font-size: 16px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-weight: 400;
     color: #616980
 }
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-km ::placeholder {
     font-size: 16px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-weight: 400;
     color: #616980
 }
@@ -7438,7 +7438,7 @@ button {
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-km button a {
     font-size: 16px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-weight: 700;
     white-space: nowrap;
     color: #768896
@@ -7453,7 +7453,7 @@ button {
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-totle div,
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-totle p {
     font-size: 16px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     color: #616980;
     font-weight: 400
 }
@@ -7472,7 +7472,7 @@ button {
     color: #505a6d;
     font-weight: 700;
     font-size: 16px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__train-section .booking__train-infor .train__infor-sale .infor__sale-totle .summary {
@@ -7486,7 +7486,7 @@ button {
 
 .booking__train-section .booking__train-sig p {
     font-size: 14px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-weight: 400;
     color: #545c72
 }
@@ -7505,7 +7505,7 @@ button {
     padding: 15px 45px;
     margin-right: 16px;
     outline: 0;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__train-section .train__wrapper-btn .wrapper__btn-btn button.btn__btn-button.other-color {
@@ -7517,7 +7517,7 @@ button {
     border-radius: 4px;
     padding: 15px 45px;
     outline: 0;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__train-section #flatpickr-custom .flatpickr-calendar {
@@ -7583,7 +7583,7 @@ button {
     width: 432px;
     height: 66px;
     margin: 40px auto 31px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 18px;
     font-weight: 400;
     font-stretch: normal;
@@ -7621,7 +7621,7 @@ button {
     width: 100%;
     border: none;
     color: #fff;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 50px
@@ -7880,7 +7880,7 @@ button {
 }
 
 .detail-ship-section .detail-ship__box-book span {
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #616980
@@ -7957,7 +7957,7 @@ button {
 }
 
 .tooltip .tooltiptext {
-    font-family: "Nunito-Sans", sans-serif !important;
+    font-family: "Nunito Sans", sans-serif, sans-serif !important;
     visibility: hidden;
     font-size: 12px !important;
     width: 150px;
@@ -8292,7 +8292,7 @@ button {
 .booking__train-confirm-wrapper .confirm__inner {
     background-color: #fff;
     border-radius: 10px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__title {
@@ -8303,7 +8303,7 @@ button {
     padding: 20px 40px;
     border-bottom: 1px solid #f2f7fb;
     margin-bottom: 0;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__content {
@@ -8325,13 +8325,13 @@ button {
     font-size: 16px;
     color: #10284f;
     font-weight: 700;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__desc,
 .booking__train-confirm-wrapper .confirm__txt {
     color: #616980;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__txt {
@@ -8357,7 +8357,7 @@ button {
 }
 
 .booking__train-confirm-wrapper .confirm__info-label span {
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__info-label img {
@@ -8370,7 +8370,7 @@ button {
     font-weight: 700;
     display: block;
     line-height: 36px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__total {
@@ -8381,14 +8381,14 @@ button {
     font-size: 20px;
     color: #616980;
     font-weight: 700;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__total-value {
     font-size: 24px;
     color: #f54f3f;
     font-weight: 700;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__train-confirm-wrapper .confirm__bottom {
@@ -8422,7 +8422,7 @@ button {
     color: #545c72;
     font-size: 18px;
     margin-bottom: 0;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 @media only screen and (max-width:991px) {
@@ -8438,7 +8438,7 @@ button {
     outline: 0;
     font-size: 18px;
     font-weight: 700;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 @media only screen and (max-width:1199px) {
@@ -8983,7 +8983,7 @@ button {
     margin-left: 10px;
     margin-bottom: 0;
     line-height: 25px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .mg-8 {
@@ -9235,7 +9235,7 @@ button {
 .booking__mb-section .booking__train-infor .infor__details-description p.border-b span.d-flex.flex-row.align-items-center {
     font-size: 16px;
     font-weight: 700;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__mb-section .booking__train-infor .train__infor-sale .infor__sale-title h4 {
@@ -9339,7 +9339,7 @@ button {
 .booking__mb-section .booking__train-infor .train__infor-sale .infor__sale-totle .wrapp .text-bold {
     color: #616980;
     font-size: 16px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .booking__mb-section .booking__train-sig {
@@ -9834,7 +9834,7 @@ button {
     color: #10284f;
     margin-bottom: 10px;
     line-height: 25px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .mg-8 {
@@ -9914,14 +9914,14 @@ button {
 
 .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__details p.fw {
     font-weight: 700;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__details p {
     font-size: 16px;
     font-weight: 600;
     color: #616980;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__details p span {
@@ -10053,7 +10053,7 @@ button {
 .confirm__mb-section .booking__train-infor .infor__details-description p.border-b span.d-flex.flex-row.align-items-center {
     font-size: 16px;
     font-weight: 700;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .confirm__mb-section .booking__train-infor .train__infor-sale h3 {
@@ -10089,7 +10089,7 @@ button {
 .confirm__mb-section .booking__train-infor .train__infor-sale .infor__sale-totle .wrapp .text-bold {
     color: #616980;
     font-size: 16px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .confirm__mb-section .booking__train-sig {
@@ -10247,7 +10247,7 @@ button {
     font-size: 18px;
     line-height: 25px;
     color: #10284f;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .yacht-details__mb .yacht-details__wrap .yacht-details__img .details__img-text .price p strong {
@@ -10266,7 +10266,7 @@ button {
     font-size: 16px;
     line-height: 22px;
     color: #fff;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .yacht-details__mb .yacht-details__wrap .info-section .info-text p {
@@ -10274,7 +10274,7 @@ button {
     font-size: 24px;
     line-height: 33px;
     color: #fff;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 .yacht-details__mb .yacht-details__wrap .description-section__wrap {
@@ -10436,7 +10436,7 @@ button {
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     color: #479dc1;
     background: #e0f3fb;
     margin-right: 8px;
@@ -10463,7 +10463,7 @@ button {
     -webkit-box-orient: vertical;
     font-size: 16px;
     line-height: 1.88;
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     color: #616980;
     position: relative;
     padding-left: 22px
@@ -11026,7 +11026,7 @@ button {
     border-radius: 10px;
     color: #fff;
     font-size: 16px;
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 @media only screen and (max-width:991px) {
@@ -11458,7 +11458,7 @@ button {
 }
 
 .proviso-page-mb-section .tab-content .proviso-tab-content p {
-    font-family:"Nunito-Sans", sans-serif;
+    font-family:"Nunito Sans", sans-serif, sans-serif;
     font-size: 16px;
     line-height: 1.375;
     color: #616980;
@@ -11488,7 +11488,7 @@ section.news .color-text {
 }
 
 .font-nutisan {
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 section.news .news__breadcrum h1 {
@@ -11621,11 +11621,11 @@ section.news-mb .color-text {
 }
 
 section.news-mb .font-svn {
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 section.news-mb .font-nutisan {
-    font-family: "Nunito-Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif, sans-serif
 }
 
 section.news-mb .news__breadcrum h1 {
@@ -12063,5 +12063,5 @@ p{
     font-family: 'Nunito-Sans';
 }
 .ck-editor h1,h2,h3,h4,h5,h6,p,ul,li,a,span,div{
-    font-family: "Nunito-Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif, sans-serif;
  }
