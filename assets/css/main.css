@@ -5301,7 +5301,7 @@ button {
 }
 
 .newfeed-detail__heading-des {
-    font-family:"SVN-Futura", sans-serif;
+    font-family:"Nunito-Sans", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 27px;
@@ -5348,7 +5348,6 @@ button {
 }
 
 .newfeed-detail__main-img span {
-    font-family:"SVN-Futura", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -5407,7 +5406,6 @@ button {
 }
 
 .newfeed-detail__main-col .col__img span {
-    font-family:"SVN-Futura", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -5547,7 +5545,7 @@ button {
 }
 
 .newfeed-relation__box-des {
-    font-family:"SVN-Futura", sans-serif;
+
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -11485,11 +11483,11 @@ section.news .color-text {
     color: #10284f
 }
 
-section.news .font-svn {
-    font-family: "Nunito-Sans", sans-serif
+.font-svn {
+    font-family: "SVN-Futura", sans-serif
 }
 
-section.news .font-nutisan {
+.font-nutisan {
     font-family: "Nunito-Sans", sans-serif
 }
 
@@ -12064,3 +12062,6 @@ p{
 .newfeed-detail .newfeed-detail__main p {
     font-family: 'Nunito-Sans';
 }
+.ck-editor h1,h2,h3,h4,h5,h6,p,ul,li,a,span,div{
+    font-family: "Nunito-Sans", sans-serif;
+ }
