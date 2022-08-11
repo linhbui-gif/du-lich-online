@@ -1702,17 +1702,17 @@ button {
         font-family: "SVN-Futura", sans-serif
     }
     .card-top-button a {
-        font-family: 'Nunito-Sans',sans-serif
+        font-family: "Nunito Sans"
     }
     .ship-card-item .ship-card .card-detail-item {
-        font-family: 'Nunito-Sans',sans-serif !important;
+        font-family: "Nunito Sans" !important;
     }
     .ship-card-item .ship-card .card-btn a {
-        font-family: 'Nunito-Sans',sans-serif;
+        font-family: "Nunito Sans";
     }
     
     .ship-card-item .ship-card .btn-sale {
-        font-family: 'Nunito-Sans',sans-serif !important;
+        font-family: "Nunito Sans" !important;
     }
 
     .banner-mobile .flatpickr-input {
@@ -2069,7 +2069,7 @@ button {
 @media only screen and (max-width:425px) {
     .box__cano .box__cano-wrapper .cano__wrapper-infor .wrapper__rule-detail p {
         color: #616980;
-        font-family: 'Nunito-Sans',sans-serif;
+        font-family: "Nunito Sans";
     }
 }
 
@@ -2098,7 +2098,7 @@ button {
 @media only screen and (max-width:425px) {
     .box__cano .box__cano-wrapper .cano__wrapper-book .book__other-cost .cost-per-person {
         font-size: 16px;
-        font-family: 'Nunito-Sans',sans-serif;
+        font-family: "Nunito Sans";
         color: #10284f
     }
 }
@@ -2151,7 +2151,7 @@ button {
 @media only screen and (max-width:426px) {
     .box__cano .box__cano-wrapper .cano__wrapper-book p.new-cost {
         margin-bottom: 0;
-        font-family: 'Nunito-Sans',sans-serif;
+        font-family: "Nunito Sans";
     }
 }
 
@@ -2582,7 +2582,7 @@ button {
     color: #7b8492;
     font-size: 16px;
     transition: .3s;
-    font-family: 'Nunito-Sans';
+    font-family: "Nunito Sans";
 }
 
 @media only screen and (max-width:991px) {
@@ -2626,7 +2626,7 @@ button {
 .box-menu-order-section .menu__order-wrap .menu__order-items .order-items-text.active p {
     color: #f54f3f;
     font-weight: 700;
-    font-family: 'Nunito-Sans';
+    font-family: "Nunito Sans";
 }
 
 .box-menu-order-section .menu__order-wrap .menu__order-items .line {
@@ -4109,7 +4109,7 @@ button {
 @media only screen and (max-width:425px) {
     .happy__client__wrapper .happy__client__item p {
         margin-bottom: 40px;
-        font-family: 'Nunito-Sans',sans-serif;
+        font-family: "Nunito Sans";
     }
 }
 
@@ -4638,7 +4638,7 @@ button {
     .ship-card-item .ship-card .card-img .card-img-button {
         right: 20px;
         bottom: 15px;
-        font-family: 'Nunito-Sans',sans-serif;
+        font-family: "Nunito Sans";
     }
 }
 
@@ -11490,8 +11490,14 @@ section.news .color-text {
 .font-nutisan {
     font-family: "Nunito Sans"
 }
-
-section.news .news__breadcrum h1 {
+section.news .news__breadcrum h1{
+    font-family:"SVN-Futura", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: 90px;
+    margin-bottom: 0
+}
+section.news .news__breadcrum h1 a{
     font-family:"SVN-Futura", sans-serif;
     font-weight: 600;
     font-size: 60px;
@@ -11569,18 +11575,16 @@ section.news .news__content .box-content .box-description span {
     -webkit-box-orient: vertical;
     overflow: hidden
 }
-
-section.news .news__content .box-content .box-description h4 {
+section.news .news__content .box-content .box-description .see-all {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 15px
+}
+section.news .news__content .box-content .box-description h4,a {
     font-size: 20px;
     font-weight: 600;
     padding: 15px 0;
     margin-bottom: 0
-}
-
-section.news .news__content .box-content .box-description a {
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 15px
 }
 
 section.news .news__panigation {
@@ -11873,123 +11877,123 @@ section.news-mb .component__pagination {
             font-family: 'SVN-Futura',sans-serif;
         }
         .page__404-main .main__text .text__service .text__service-item {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-title h3 {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__form-infor p  {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__form-note p {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .confirm__mb-section .booking__train-wrapper .train__wrapper-fill .wrapper__fill-form .fill__form-p p span {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .confirm__mb-section .booking__train-wrapper .train__wrapper-service .wrapper__service-price .service__price-checkbox p {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .confirm__mb-section .booking__train-infor .train__infor-sale .infor__sale-totle p  {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .confirm__mb-section .booking__train-sig p {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .confirm__mb-section .booking__train-infor .train__infor-sale .infor__sale-totle div {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .btn-hover-wrapper span.btn-hover {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .box__cano .box__cano-wrapper .cano__wrapper-infor .wrapper__infor-detail ul li {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .helicopter-mb__content p {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .helicopter-mb__content h3 {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .helicopter-mb__tiket .discount {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .helicopter-mb__tiket ul li p {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .helicopter-mb__tiket .box-paytime .time p {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         section.news-mb .font-svn {
             font-family: 'SVN-Futura',sans-serif;
         }
         .newfeed-detail__heading-date {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .newfeed-detail__heading-des {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .newfeed-detail .newfeed-detail__main p {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .newfeed-relation__box-date {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .newfeed-relation__box-des {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .newfeed-relation__box-next {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
           
         .yacht-details__mb .yacht-details__wrap .info-section .info-text span{
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         } 
         .yacht-details__mb .yacht-details__wrap .info-section .info-text p{
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }  
         .yacht-details__mb .yacht-details__wrap .description-section__wrap p{
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .yacht-details__mb .yacht-details__wrap .tab-content .tab a{
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .yacht-details__mb .yacht-details__wrap .tab-content .content h3 {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .yacht-details__mb .yacht-details__wrap .tab-content .content ul li p {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .banner-cano-inner .cano-service-detail .detail-left .left-content .content-head {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .box__cano .box__cano-wrapper .cano__wrapper-img button {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .yacht-details__mb .yacht-details__wrap .review-section__wrap span {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .yacht-details__mb .yacht-details__wrap .review-section__wrap .progress-group .check label {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .comment-box__rate p  {
-            font-family: 'Nunito-Sans',sans-serif;
+            font-family: "Nunito Sans";
         }
         .comment-box__form .flex-3 textarea {
-            font-family: 'Nunito-Sans',sans-serif;  
+            font-family: "Nunito Sans";  
         }
         .comment-box__form .form-group .form-wrap input {
-            font-family: 'Nunito-Sans',sans-serif;  
+            font-family: "Nunito Sans";  
         }
         .yacht-details__mb .yacht-details__wrap .recommend-section__wrap .recommend-content .img .discount span {
-            font-family: 'Nunito-Sans',sans-serif;  
+            font-family: "Nunito Sans";  
         }
         .detail-ship-mobile .detail-ship__box-book span {
-            font-family: 'Nunito-Sans',sans-serif;  
+            font-family: "Nunito Sans";  
             
         }
         .proviso-page-mb-section .tab-content .tab a {
-            font-family: 'Nunito-Sans',sans-serif;      
+            font-family: "Nunito Sans";      
         }
 }
 
@@ -12060,8 +12064,12 @@ p{
 }
 
 .newfeed-detail .newfeed-detail__main p {
-    font-family: 'Nunito-Sans';
+    font-family: "Nunito Sans";
 }
 .ck-editor h1,h2,h3,h4,h5,h6,p,ul,li,a,span,div{
     font-family: "Nunito Sans";
+ }
+ a, a:hover{
+    color: #10284F;
+    cursor: pointer;
  }
