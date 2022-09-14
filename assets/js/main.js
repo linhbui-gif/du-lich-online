@@ -14,7 +14,7 @@
 /* ============================= 16 Select options trang dat ve cano  ============================= */
 $(document).ready(function () {
     fastnews.init();
-
+    recommendCarousel.init()
     navigation.init();
     happyClient.init();
     happyClientMb.init();
@@ -70,6 +70,21 @@ const fastnews = {
     },
 };
 
+const recommendCarousel = {
+    init:function(){
+     this.recommend();
+    },
+    recommend:function(){
+        $(".recommend-carousel").owlCarousel({
+            dots: false,
+            animateIn: "fadeInUp",
+            items: 1.5,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+        });
+    }
+}
 /* ============================= 2, Navigation  ============================= */
 const navigation = {
     init: function () {

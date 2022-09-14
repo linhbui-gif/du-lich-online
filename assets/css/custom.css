@@ -328,3 +328,11 @@
  .yach-details__section h2.title-section, .yach-details__section .evaluate-section__content .price p strong {
      font-size: 30px !important;
  }
+.tab-content-scroll-x{
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.tab-content-scroll-x .item{
+    display: inline-block;
+    margin-right: 10px;
+}
