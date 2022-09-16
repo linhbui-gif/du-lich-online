@@ -331,6 +331,7 @@
 .tab-content-scroll-x{
     white-space: nowrap;
     overflow-x: scroll;
+    padding-bottom: 20px;
 }
 .tab-content-scroll-x .item{
     display: inline-block;
